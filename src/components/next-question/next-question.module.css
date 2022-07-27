@@ -1,0 +1,50 @@
+.next-question {
+    width: 95%;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: rgb(177, 225, 231);
+    border-radius: 7px;
+    box-shadow: 10px 7px 3px rgb(40, 57, 102);
+    text-align: center;
+}
+
+.comment {
+    box-shadow: none;
+    padding: 1rem;
+}
+
+.next {
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.3s box-shadow;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.next:hover {
+    box-shadow: none;
+}
+
+.inactive {
+    opacity: 0.3;
+}
+
+.inactive-next {
+    box-shadow: none;
+    cursor: auto;
+}
+
+@media (max-width: 700px) {
+    .next-question {
+        padding: 0;
+    }
+}

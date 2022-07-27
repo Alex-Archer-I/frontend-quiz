@@ -1,0 +1,45 @@
+.screen {
+    width: 95%;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.card {
+    background-color: rgb(177, 225, 231);
+    border-radius: 7px;
+    box-shadow: 10px 7px 3px rgb(40, 57, 102);
+    text-align: center;
+}
+
+.screen-text {
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.screen-text p,
+.screen-text h1 {
+    margin: 2rem 0;
+}
+
+.screen-button {
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.3s box-shadow;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.screen-button:hover {
+    box-shadow: none;
+}
+
+@media (max-width: 700px) {
+    .screen-text {
+        font-size: 1rem;
+    }
+    
+}
