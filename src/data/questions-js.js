@@ -259,6 +259,110 @@ const questionsJS = [
         ],
         index: 9,
     },
+    {
+        question: 'Какой из этих циклов предназначен для работы с массивами?',
+        answers: [
+            {
+                text: 'for - in',
+                isCorrect: false,
+                index: Math.random(),
+            },
+            {
+                text: 'for - from',
+                isCorrect: false,
+                index: Math.random(),
+            },
+            {
+                text: 'for - every',
+                isCorrect: false,
+                index: Math.random(),
+            },
+            {
+                text: 'for - of',
+                isCorrect: true,
+                index: Math.random(),
+            },
+        ],
+        index: 10,
+    },
+    {
+        question: 'Какой метод используется для построения цепочки промисов?',
+        answers: [
+            {
+                text: '.after()',
+                isCorrect: false,
+                index: Math.random(),
+            },
+            {
+                text: '.onResolve()',
+                isCorrect: false,
+                index: Math.random(),
+            },
+            {
+                text: '.andNow()',
+                isCorrect: false,
+                index: Math.random(),
+            },
+            {
+                text: '.then()',
+                isCorrect: true,
+                index: Math.random(),
+            },
+        ],
+        index: 11,
+    },
+    {
+        question: 'В каком из вариантов правильно прописан тернарный оператор?',
+        answers: [
+            {
+                text: 'fruit.type = (fruit.color === "green") => "apple" : "banana";',
+                isCorrect: false,
+                index: Math.random(),
+            },
+            {
+                text: 'fruit.type = (fruit.color === "green") = "apple" or "banana";',
+                isCorrect: false,
+                index: Math.random(),
+            },
+            {
+                text: 'fruit.type = if (fruit.color === "green") {"apple"} else {"banana"};',
+                isCorrect: false,
+                index: Math.random(),
+            },
+            {
+                text: 'fruit.type = (fruit.color === "green") ? "apple" : "banana";',
+                isCorrect: true,
+                index: Math.random(),
+            },
+        ],
+        index: 12,
+    },
+    {
+        question: 'Какое значение будет у переменной - "let a;" - если его не присвоить?',
+        answers: [
+            {
+                text: 'null',
+                isCorrect: false,
+                index: Math.random(),
+            },
+            {
+                text: 'Object.variable',
+                isCorrect: false,
+                index: Math.random(),
+            },
+            {
+                text: 'unnownVariable',
+                isCorrect: false,
+                index: Math.random(),
+            },
+            {
+                text: 'undefined',
+                isCorrect: true,
+                index: Math.random(),
+            },
+        ],
+        index: 13,
+    },
 ];
 
 for (const question of questionsJS) {
@@ -269,4 +373,4 @@ export default questionsJS.sort((a, b) => {
     if (a.index > b.index) {return 1};
     if (a.index === b.index) {return 0};
     if (a.index < b.index) {return -1};
-});
+}).slice(0, 10);
